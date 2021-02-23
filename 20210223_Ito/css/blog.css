@@ -1,0 +1,57 @@
+/* blog */
+.blog h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.blog-contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-content {
+  width: 32%;
+}
+
+.blog-content:nth-of-type(-n + 3) {
+  padding-bottom: 20px;
+}
+
+.blog-content img {
+  width: 100%;
+}
+
+.blog-content p {
+  padding-top: 10px;
+}
+
+.blog-content p:last-of-type {
+  font-weight: bold;
+}
+
+.blog-content a {
+  color: black;
+}
+
+.blog-content a:hover {
+  opacity: 0.8;
+}
+/* blog-end */
+
+@media screen and (max-width: 768px) {
+  /* blog */
+  .blog-contents {
+    flex-direction: column;
+  }
+
+  .blog-content {
+    width: 100%;
+  }
+
+  .blog-content p:last-of-type {
+    padding-bottom: 10px;
+  }
+  /* blog-end */
+}

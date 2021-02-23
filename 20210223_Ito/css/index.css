@@ -1,0 +1,217 @@
+/* eyecatch */
+.index-eyecatch {
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-eyecatch-message {
+  color: white;
+  position: absolute;
+}
+
+.index-eyecatch-message h1 {
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+/* eyecatch-end */
+
+/* message */
+.message {
+  background-color: #222;
+  color: white;
+}
+
+.message-wrap h2 {
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+.message-wrap p {
+  line-height: 2.5rem;
+  width: 90%;
+}
+/* message-end */
+
+/* service */
+
+.service h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  width: 49%;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content h3 {
+  padding-top: 10px;
+  font-size: 1.8rem;
+}
+
+.content p {
+  padding: 10px 0 20px 0;
+  line-height: 2.5rem;
+}
+
+/* service-end */
+
+/* news */
+.news {
+  background-color: #222;
+}
+
+.news-head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.news-head h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.news-head a {
+  color: white;
+  background-color: #cd0224;
+  padding: 10px;
+}
+
+.news-head a:hover {
+  opacity: 0.8;
+}
+
+.news-contents a {
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 25px 0 25px 20px;
+}
+
+.news-contents a:hover {
+  opacity: 0.8;
+}
+
+.news-contents a:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.news-contents span {
+  font-weight: bold;
+}
+/* news-end */
+
+/* blog */
+.blog h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.blog-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-content {
+  width: 32%;
+}
+
+.blog-content img {
+  width: 100%;
+}
+
+.blog-content p {
+  padding-top: 10px;
+}
+
+.blog-content p:last-of-type {
+  font-weight: bold;
+}
+
+.blog-content a {
+  color: black;
+}
+
+.blog-content a:hover {
+  opacity: 0.8;
+}
+/* blog-end */
+
+/* info */
+.info {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.info-company {
+  background-color: #cd0224;
+}
+
+.info-recruite {
+  background-color: #222;
+}
+
+.info-item {
+  width: 50%;
+}
+
+.info a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 2.4rem;
+}
+/* info-end */
+
+
+@media screen and (max-width: 768px) {
+  /* eyecatch */
+  .eyecatch h1 {
+    line-height: 8rem;
+  }
+  /* eyecatch-end */
+
+  /* service */
+  .contents {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+  /* service-end */
+
+  /* blog */
+  .blog-contents {
+    flex-direction: column;
+  }
+
+  .blog-content {
+    width: 100%;
+  }
+
+  .blog-content p:last-of-type {
+    padding-bottom: 10px;
+  }
+  /* blog-end */
+}

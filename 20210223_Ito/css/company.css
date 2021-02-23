@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+tr {
+  border-top: 1px solid black;
+}
+
+tr:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+th, td {
+  padding: 20px 0;
+}

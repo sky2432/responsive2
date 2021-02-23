@@ -1,0 +1,31 @@
+label, input, textarea {
+  display: block;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+label:nth-of-type(n + 2):after {
+  content: "*";
+  color: red;
+}
+
+input {
+  padding: 5px 0;
+  margin: 10px 0 25px 0;
+}
+
+label:last-of-type {
+  padding-bottom: 5px;
+}
+
+.link-button input {
+  background-color: #222;
+}
